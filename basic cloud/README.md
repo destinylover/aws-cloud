@@ -30,7 +30,7 @@ AWS를 사용하긴 하지만, 단순히 서비스 이름을 외우는 수준이
 # 클라우드 인프라 기본 구조
 
 클라우드에서 실제 장비는 지역마다 분산된 데이터 센터에 존재한다. AWS 기준으로는 리전(Region)이라는 단위로 묶여 있고, 리전 안에는 가용영역(AZ)이 여러 개 존재한다.  
-[AWS 글로벌 인프라 설명 보기](https://aws.amazon.com/ko/about-aws/global-infrastructure/regions_az/)
+[AWS 글로벌 인프라](https://aws.amazon.com/ko/about-aws/global-infrastructure/regions_az/)
 하나의 리전은 보통 서로 물리적으로 분리된 2~3개의 AZ로 구성되고, 각 AZ는 하나 이상의 데이터센터로 구성된다.  
 애플리케이션을 배포할 때도 고가용성을 위해 보통 여러 AZ에 걸쳐 자원을 배치하게 된다.
 
