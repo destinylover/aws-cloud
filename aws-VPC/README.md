@@ -28,7 +28,8 @@ AWS에서는 하나의 리전 안에 존재하는 가용영역들에 대해
 아래 그림처럼, 라우터는 네트워크와 외부(또는 다른 네트워크)의 관문 역할을 하며  
 이런 역할 때문에 게이트웨이(Gateway)라고도 불린다.
 
-![VPC 라우팅 구조](./img/vpc2.png)
+![vpc2](https://github.com/user-attachments/assets/6fd1bb14-ac2d-403e-bc0f-a1eb2ae8008e)
+
 
 ---
 
@@ -62,7 +63,9 @@ VPC부터 보안 그룹, 서브넷, 인스턴스 등 AWS 리소스는 생성 이
 
 실습에서는 아래와 같은 컨벤션을 적용했다:
 
-![VPC](./img/vpc.png)
+![vpc](https://github.com/user-attachments/assets/e20f06bf-3dac-4c6c-bdcc-56ccedbb961d)
+
+
 
 
 이렇게 하면 리소스가 많아져도 식별하기 쉬워지고, 협업할 때도 통일된 규칙으로 관리할 수 있다.
