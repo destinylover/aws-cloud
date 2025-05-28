@@ -144,8 +144,9 @@ IAM 콘솔에서 '액세스 관리' 메뉴로 들어가, 사용자 탭을 선택
 
 이제 루트계정 산하에 있는 모든 iam계정이 나타나고 추가해주면 된다.
 
+![19](https://github.com/user-attachments/assets/f644a7a0-4b8e-4c7b-b547-2fee0b333b30)
 
-![20](https://github.com/user-attachments/assets/fdea2c38-48c5-43ca-8d3e-9f9bcd246f11)
+
 
 
 그룹 설정 하단에서는 해당 그룹에 일괄적으로 적용할 권한 정책을 선택할 수 있다.  
