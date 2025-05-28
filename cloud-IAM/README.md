@@ -64,6 +64,92 @@ IAM 그룹 활용하기
 
 ---
 
+
+### 다중 요소 인증(MFA) 설정하기
+
+루트 계정은 권한이 막강하기 때문에, 로그인 보안을 강화할 필요가 있다.  
+비밀번호만으로 접근 가능한 상태는 위험할 수 있어, MFA(다중 인증)를 설정했다.
+
+일반적으로 사용하는 Google Authenticator 앱을 설치하고,  
+AWS 콘솔에서 MFA 설정을 진행했다. QR 코드를 스캔하고,  
+앱에 표시되는 6자리 코드를 두 번 입력하면 설정이 완료된다.
+
+이제 루트 계정 로그인 시 추가 인증이 요구되며,  
+비밀번호 유출만으로는 접근이 불가능하다.
+
+보안 자격 증명 관리 화면을 열고 MFA를 활성화 시켰다.
+![iam4](https://github.com/user-attachments/assets/6bf8e334-940e-4af2-a017-fc4681c63d03)
+다음 기기관리명을 적어줍니다. 나중에도 어떤 기기라는걸 알아볼 수 있도록 했다.
+![iam5](https://github.com/user-attachments/assets/66f983d5-ea09-4fbe-b035-a8b063c49637)
+
+![iam7](https://github.com/user-attachments/assets/78d4e04a-140e-437b-b535-4d7b881f0502)
+
+이제 계정 비밀번호 유출만으로 핵과금 사태를 맞이할 위험은 사라졌다.
+
+### 일반 사용자(IAM) 계정 생성하기
+
+루트 계정 대신 사용할 일반 사용자 계정을 생성하기 위해 IAM 대시보드로 이동했다.
+
+![iam8](https://github.com/user-attachments/assets/71e71084-357d-4966-9f47-41ae9d2770e6)
+
+IAM 콘솔에서 '액세스 관리' 메뉴로 들어가, 사용자 탭을 선택한 뒤 새 사용자를 추가했다.
+
+![iam9](https://github.com/user-attachments/assets/1c07e9c6-45ff-4f5d-aee3-e7302e24045e)
+
+사용자 생성 버튼을 클릭한 후, 간단하게 계정 이름을 입력했다.  
+콘솔 로그인 권한을 부여하고, IAM 사용자 유형을 선택했다.  
+암호는 자동 생성 방식으로 설정했다.
+
+![iam10](https://github.com/user-attachments/assets/59c0618a-d797-48b1-8435-4f93b65af40e)
+
+
+![iam13](https://github.com/user-attachments/assets/eed6ac38-ee86-4940-b69b-37db7fed9b15)
+
+모든 설정을 마치고 사용자 계정을 생성했다.
+
+
+
+![iam14](https://github.com/user-attachments/assets/93989745-7de7-486d-98c4-9dda6b9f7cf5)
+
+이제 루트 계정에서 로그아웃한 뒤, 새로 만든 사용자 계정으로 콘솔에 로그인해본다.
+
+![iam17](https://github.com/user-attachments/assets/e6b87e13-4e8d-405a-b170-f9c20eba3f4b)
+
+루트 계정에서 가능했던 일부 기능들이 제한된 것을 확인할 수 있다.
+
+### 그룹 설정하기
+
+이제 사용자 그룹을 만들어 권한을 효율적으로 관리해본다.
+
+먼저 IAM 사용자에서 로그아웃한 뒤, 다시 루트 계정으로 로그인했다.  
+이후 IAM 대시보드에서 '사용자 그룹' 메뉴로 이동해 새로운 그룹을 생성하고, 이름을 지정했다.
+
+![18](https://github.com/user-attachments/assets/1bfca6ba-4c06-4fda-9317-8a08f70b03e7)
+
+이제 루트계정 산하에 있는 모든 iam계정이 나타나고 추가해주면 된다.
+
+![20](https://github.com/user-attachments/assets/fdea2c38-48c5-43ca-8d3e-9f9bcd246f11)
+그룹 설정 하단에서는 해당 그룹에 일괄적으로 적용할 권한 정책을 선택할 수 있다.  
+필요한 정책을 연결한 뒤, 그룹 생성을 완료했다.
+
+여기서는 PowerUserAccess, IAMFullAccess 2개를 부여했다.
+
+
+PowerUserAccess : AWS의 모든 자원에 접근 가능.
+IAMFullAccess : IAM에 대한 모든 접근 권한을 가짐.
+![20](https://github.com/user-attachments/assets/5ad17f58-07dc-4c2a-b0a2-91033b276205)
+![21](https://github.com/user-attachments/assets/b938c58d-00fe-46e2-9234-291b7ad9220b)
+
+그룹 생성 이후에 사용자를 추가하려면,  
+IAM 콘솔에서 해당 그룹으로 들어가 사용자만 따로 추가할 수도 있다.
+
+![22](https://github.com/user-attachments/assets/a3d81e00-d530-4b9f-8f7d-310a0cdeb3b8)
+이제 권한이 부여됐기 때문에, 다시 로그아웃한 뒤 해당 IAM 계정으로 로그인해보면  
+이전과는 달리 더 많은 서비스에 접근할 수 있게 된 걸 확인할 수 있다.
+
+![23](https://github.com/user-attachments/assets/08089860-e59c-4449-b2e7-20691ba9bebb)
+
+
 실습하면서 느낀 점
 
 처음엔 IAM 정책이 JSON이라 직관적으로 이해하기 어려웠는데,  
