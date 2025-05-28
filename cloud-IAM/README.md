@@ -81,6 +81,8 @@ AWS 콘솔에서 MFA 설정을 진행했다. QR 코드를 스캔하고,
 
 
 ![iam4](https://github.com/user-attachments/assets/6bf8e334-940e-4af2-a017-fc4681c63d03)
+
+
 다음 기기관리명을 적어줍니다. 나중에도 어떤 기기라는걸 알아볼 수 있도록 했다.
 
 
