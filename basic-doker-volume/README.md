@@ -15,6 +15,8 @@ Docker가 직접 볼륨을 관리하며, 호스트 파일 시스템과 분리
 
 
 1. 데이터유지성
+
+
 ![도커볼륨](https://github.com/user-attachments/assets/dbd6de89-be9c-4f8d-ba16-e24f4dcc1a8d)
 
 컨테이너 외부에 데이터를 저장하는 공간. 컨테이너가 삭제되어도 데이터 유지
