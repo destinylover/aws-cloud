@@ -49,4 +49,29 @@ docker 컴포즈 yml파일이다.
 
 
 
+Docker Compose를 사용해 Flask 앱과 MySQL을 연동하는 전형적인 2-tier 아키텍처 구현해보기.
+
+
+![image](https://github.com/user-attachments/assets/b1b27ea0-07eb-4dc1-b1e5-211157d4eb09)
+
+copose.yml파일
+
+![image](https://github.com/user-attachments/assets/9c1439df-ab93-4ba9-a9f0-62dcb5505051)
+
+빌드해보고 접속해보자.
+
+![image](https://github.com/user-attachments/assets/cf3d8904-a2a8-4e87-afc1-cbd70a3c80df)
+
+실행된것을 확인.
+
+실습으로서 공부하게된것.
+docker-compose.yml로 두 컨테이너(Flask+MySQL) 한 번에 띄우기
+컨테이너 간 네트워크 연결 (app에서 db 호스트명으로 접근)
+환경 변수로 설정 분리 (MYSQL_HOST=db)
+볼륨으로 DB 데이터 유지 (db_data)
+
+
+
+
+
 
