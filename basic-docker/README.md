@@ -16,3 +16,37 @@ Flask 코드
 
 웹 브라우저를 통해 Flask 앱 접속 및 정상 동작 확인
 
+
+
+
+
+
+
+
+
+
+
+
+
+간단한 DOCKER COMPOSE 사용
+
+![화면 캡처 2025-06-10 233712](https://github.com/user-attachments/assets/e656642f-3c59-4716-8178-a2e5a67a2b93)
+
+docker 컴포즈 yml파일이다.
+
+
+실행해보자.
+
+![화면 캡처 2025-06-10 233641](https://github.com/user-attachments/assets/242d4031-0814-466e-91fe-15022ab9a069)
+
+
+![화면 캡처 2025-06-10 233625](https://github.com/user-attachments/assets/5475a1d9-2b1a-4318-9146-c4bb32e6f98a)
+
+![화면 캡처 2025-06-10 233652](https://github.com/user-attachments/assets/76892127-3340-4e98-a2b4-0611f3835948)
+
+사진과같이 잘접속까지 되는 모습.
+
+
+
+
+
