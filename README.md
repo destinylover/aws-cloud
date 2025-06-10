@@ -28,5 +28,6 @@ https://github.com/destinylover/aws-cloud/tree/a94a5f4644da8630facbaa4b52ac24998
 
 https://github.com/destinylover/aws-cloud/tree/a94a5f4644da8630facbaa4b52ac2499802e12be/basic-doker-volume
 
-terraform
+terraform 시작전 설정. 및 cli접속 점검
+
 https://github.com/destinylover/aws-cloud/tree/47d1ec43b8463922adc8c87572b6141a815c715a/aws-terraform
