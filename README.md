@@ -5,3 +5,6 @@ I'm currently organizing everything I've learned while studying cloud computing 
 Each section is written in README format for easier reading and reference.
 
 This is a work in progress and will continue to be updated as I learn more.
+
+
+https://github.com/destinylover/aws-cloud/tree/541bea9ae4475848bc5f82c1fdb4e05e18fb3d02/basic%20cloud
